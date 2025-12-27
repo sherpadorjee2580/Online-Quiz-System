@@ -23,9 +23,7 @@ const AdminDashboard = () => {
               <div
                 key={i}
                 className={`px-4 py-2 rounded-md cursor-pointer ${
-                  i === 0
-                    ? "bg-[#172033]"
-                    : "hover:bg-[#172033]"
+                  i === 0 ? "bg-[#172033]" : "hover:bg-[#172033]"
                 }`}
               >
                 {item}
@@ -77,12 +75,8 @@ const AdminDashboard = () => {
               className="bg-[#0e1624] border border-[#00000014] rounded-xl p-6"
             >
               <p className="text-gray-400 text-sm">{card.title}</p>
-              <h2 className="text-3xl font-semibold mt-2">
-                {card.value}
-              </h2>
-              <p className="text-sm text-green-400 mt-2">
-                {card.info}
-              </p>
+              <h2 className="text-3xl font-semibold mt-2">{card.value}</h2>
+              <p className="text-sm text-green-400 mt-2">{card.info}</p>
             </div>
           ))}
         </div>
@@ -131,9 +125,7 @@ const AdminDashboard = () => {
                 >
                   <div>
                     <p className="font-medium">{user.name}</p>
-                    <p className="text-xs text-gray-400">
-                      {user.role}
-                    </p>
+                    <p className="text-xs text-gray-400">{user.role}</p>
                   </div>
 
                   <span
@@ -146,9 +138,7 @@ const AdminDashboard = () => {
                     {user.status}
                   </span>
 
-                  <span className="text-gray-400">
-                    {user.time}
-                  </span>
+                  <span className="text-gray-400">{user.time}</span>
                 </div>
               ))}
             </div>
