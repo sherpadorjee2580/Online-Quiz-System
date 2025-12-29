@@ -77,9 +77,11 @@ const TeacherDashboard = () => {
         <section className="mb-12">
           <div className="flex justify-between items-center mb-4">
             <h2 className="font-semibold text-lg">Recent Quizzes</h2>
-            <button className="bg-[#2b8af6] px-4 py-2 rounded-md text-sm font-medium">
-              + Create New Quiz
-            </button>
+
+            <a href="/create-quiz"> <div className="bg-[#2b8af6] px-4 py-2 rounded-md text-sm font-medium">
+                + Create New Quiz
+              </div>
+            </a>
           </div>
 
           <div className="bg-[#0e1624] border border-[#00000014] rounded-xl overflow-hidden">
